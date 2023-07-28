@@ -1,10 +1,3 @@
-/**
-* Template Name: DevFolio
-* Updated: May 30 2023 with Bootstrap v5.3.0
-* Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 (function() {
   "use strict";
 
@@ -169,7 +162,7 @@
     new Typed('.typed', {
       strings: typed_strings,
       loop: true,
-      typeSpeed: 100,
+      typeSpeed: 50,
       backSpeed: 50,
       backDelay: 2000
     });
@@ -182,40 +175,40 @@
     selector: '.portfolio-lightbox'
   });
 
-  /**
-   * Testimonials slider
-   */
-  new Swiper('.testimonials-slider', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
+  // /**
+  //  * Testimonials slider
+  //  */
+  // new Swiper('.testimonials-slider', {
+  //   speed: 600,
+  //   loop: true,
+  //   autoplay: {
+  //     delay: 5000,
+  //     disableOnInteraction: false
+  //   },
+  //   slidesPerView: 'auto',
+  //   pagination: {
+  //     el: '.swiper-pagination',
+  //     type: 'bullets',
+  //     clickable: true
+  //   }
+  // });
 
-  /**
-   * Portfolio details slider
-   */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
+  // /**
+  //  * Portfolio details slider
+  //  */
+  // new Swiper('.portfolio-details-slider', {
+  //   speed: 400,
+  //   loop: true,
+  //   autoplay: {
+  //     delay: 5000,
+  //     disableOnInteraction: false
+  //   },
+  //   pagination: {
+  //     el: '.swiper-pagination',
+  //     type: 'bullets',
+  //     clickable: true
+  //   }
+  // });
 
   /**
    * Preloader
@@ -243,7 +236,7 @@ $("#submit-form").submit((e)=>{
       data:$("#submit-form").serialize(),
       method:"post",
       success:function (response){
-          $("#sent-message").block
+          
           alert("Form submitted successfully")
           window.location.reload()
           //window.location.href="https://google.com"
